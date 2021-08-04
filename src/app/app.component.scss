@@ -1,0 +1,53 @@
+.loader-container {
+    width: 100%;
+    height: 100vh;
+   padding-top: 200px;
+   display: flex;
+   justify-content: center;
+  }
+  button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #0095ff;
+    cursor: pointer;
+    border: 0;
+    border-color: white;
+    font-family: MONOSPACE;
+    color: white;
+    font-size: 25px;
+  }
+  .spinning {
+    animation: animloader 5s cubic-bezier(0.23, 0.9, 0.75, 0.1) infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: -150px 0 #ddd inset;
+    }
+    50% {
+      animation-delay: 1s;
+    }
+    100% {
+      box-shadow: 150px 0 #ddd inset;
+    }
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background: #ddd;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    letter-spacing: 2px;
+    font-family: math;
+  }
